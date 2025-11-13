@@ -1,0 +1,2 @@
+# Infosys-Internship-AIML-Safety-Eye-AI-Powered-Workplace-Occupancy-Safety-Monitor-
+Project Statement:  Develop an AI-based system that uses video surveillance feeds to monitor workplace  occupancy levels and detect safety compliance. The platform will help office and industrial  space managers improve space utilization and ensure employees follow safety protocols (e.g.,  wearing helmets, vest and etc)

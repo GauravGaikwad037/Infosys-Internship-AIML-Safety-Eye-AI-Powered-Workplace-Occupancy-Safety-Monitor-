@@ -112,6 +112,9 @@ In later milestones, use these rules to generate alerts & dashboard stats.
 
 ![Violation](violation_2025-10-07_19-59-40.jpg)
 
+![Daily Chart](daily_chart_2025-10-06.png)
+
+
 ---
 
 **Authoring tip:** Start with `yolov8n.pt` (smallest) to iterate quickly.

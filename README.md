@@ -102,11 +102,6 @@ SafetyEye/
 └─ requirements.txt
 ```
 
-## Safety Rules (Milestone 1)
-Define violations in `configs/safety_rules.yaml` (edit to match your dataset class names):
-- `require_helmet: true`
-- `require_vest: true`
-- Violation if: person detected **without** helmet or vest within a proximity/association rule.
 
 In later milestones, use these rules to generate alerts & dashboard stats.
 

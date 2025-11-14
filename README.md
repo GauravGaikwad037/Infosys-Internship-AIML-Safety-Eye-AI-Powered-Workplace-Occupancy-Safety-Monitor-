@@ -110,9 +110,13 @@ Define violations in `configs/safety_rules.yaml` (edit to match your dataset cla
 
 In later milestones, use these rules to generate alerts & dashboard stats.
 
-![Violation](violation_2025-10-07_19-59-40.jpg)
+<p align="center">
+  <img src="violation_2025-10-07_19-59-40.jpg" width="450" style="border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" />
+</p>
 
-![Daily Chart](daily_chart_2025-10-06.png)
+<p align="center">
+  <img src="daily_chart_2025-10-06.png" width="450" style="border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" />
+</p>
 
 
 ---

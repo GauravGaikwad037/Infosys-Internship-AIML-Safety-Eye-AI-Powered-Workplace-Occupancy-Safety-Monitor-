@@ -110,6 +110,8 @@ Define violations in `configs/safety_rules.yaml` (edit to match your dataset cla
 
 In later milestones, use these rules to generate alerts & dashboard stats.
 
+![Violation](violation_2025-10-07_19-59-40.jpg)
+
 ---
 
 **Authoring tip:** Start with `yolov8n.pt` (smallest) to iterate quickly.

@@ -105,91 +105,116 @@ SafetyEye/
 
 In later milestones, use these rules to generate alerts & dashboard stats.
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stylish Image Gallery</title>
-    <!-- Load Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Load Inter font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* Apply Inter font */
-        body { 
-            font-family: 'Inter', sans-serif; 
-        }
-    </style>
-</head>
-<body class="bg-gray-100 min-h-screen p-8 md:p-12">
+<style>
+.gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Inter, sans-serif;
+}
 
-    <div class="max-w-7xl mx-auto">
-        
-        <!-- Section Title -->
-        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-10">
-            Project Showcase
-        </h1>
-        
-        <!-- 
-          Responsive Grid Gallery
-          - 1 column on small screens (default)
-          - 2 columns on medium screens (md:)
-          - 3 columns on large screens (lg:)
-          - gap-8 adds space between cards
-        -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <!-- Card 1 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 transform">
-                <!-- 
-                  Image: I've replaced your local images with placeholders.
-                  Just swap 'https://placehold.co/...' with your image paths 
-                  (e.g., 'violation_2025-10-07_19-59-40.jpg')
-                  when you add this to your GitHub project.
-                -->
-                <img src="violation_2025-10-07_19-59-40.jpg" alt="Violation Report" class="w-full h-48 object-cover">
-                
-                <!-- Card Content -->
-                <div class="p-5">
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Violation Report</h3>
-                    <p class="text-gray-600 text-sm">
-                        Dashboard showing security and compliance violations detected on 2025-10-07.
-                    </p>
-                </div>
-            </div>
+.gallery-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #333;
+}
 
-            <!-- Card 2 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 transform">
-                <img src="daily_chart_2025-10-06.pngt" alt="Daily Chart" class="w-full h-48 object-cover">
-                
-                <!-- Card Content -->
-                <div class="p-5">
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Daily Chart</h3>
-                    <p class="text-gray-600 text-sm">
-                        Daily user engagement and activity metrics for the period ending 2025-10-06.
-                    </p>
-                </div>
-            </div>
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
 
-            <!-- Card 3 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 transform">
-                <img src="metrics.jpg" alt="Key Metrics" class="w-full h-48 object-cover">
-                
-                <!-- Card Content -->
-                <div class="p-5">
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Key Metrics</h3>
-                    <p class="text-gray-600 text-sm">
-                        An overview of the project's key performance indicators (KPIs) and growth metrics.
-                    </p>
-                </div>
-            </div>
-            
+@media (min-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    transition: 0.3s ease-in-out;
+}
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 26px rgba(0,0,0,0.25);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #666;
+}
+</style>
+
+<div class="gallery-container">
+
+<h1 class="gallery-title">Project Showcase</h1>
+
+<div class="gallery-grid">
+
+    <!-- Card 1 -->
+    <div class="card">
+        <img src="violation_2025-10-07_19-59-40.jpg" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Violation Report</h3>
+            <p class="card-text">
+                Dashboard showing security and compliance violations detected on 2025-10-07.
+            </p>
         </div>
-        
     </div>
-</body>
-</html>
+
+    <!-- Card 2 -->
+    <div class="card">
+        <img src="daily_chart_2025-10-06.png" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Daily Chart</h3>
+            <p class="card-text">
+                Daily user engagement and activity metrics for the period ending 2025-10-06.
+            </p>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+        <img src="metrics.jpg" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Key Metrics</h3>
+            <p class="card-text">
+                Overview of the project's key performance indicators (KPIs) and growth metrics.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
 
 
 

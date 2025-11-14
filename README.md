@@ -106,12 +106,24 @@ SafetyEye/
 In later milestones, use these rules to generate alerts & dashboard stats.
 
 <p align="center">
-  <img src="violation_2025-10-07_19-59-40.jpg" width="450" style="border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" />
+
+  <!-- Violation Image -->
+  <img src="violation_2025-10-07_19-59-40.jpg" 
+       width="420" 
+       style="border-radius: 12px; margin: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
+  
+  <!-- Daily Chart Image -->
+  <img src="daily_chart_2025-10-06.png" 
+       width="420" 
+       style="border-radius: 12px; margin: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
+
+  <!-- Metrics Image -->
+  <img src="metrics.jpg" 
+       width="420" 
+       style="border-radius: 12px; margin: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
+
 </p>
 
-<p align="center">
-  <img src="daily_chart_2025-10-06.png" width="450" style="border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" />
-</p>
 
 
 ---
